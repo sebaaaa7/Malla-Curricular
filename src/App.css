@@ -1,0 +1,78 @@
+body {
+  background-color: #f8f9fa; 
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; 
+}
+
+
+#root {
+  max-width: 1600px; 
+  margin: 0 auto; 
+  padding: 0px; 
+}
+
+
+.header {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 0px; 
+}
+
+
+.semester-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  gap: 0px; 
+}
+
+h2 {
+  margin-top: 0; 
+  font-size: 18px; 
+  text-align: center;
+  color: #495057; 
+}
+
+.subjects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0px; 
+}
+
+.subject-button {
+  margin: 0; 
+  font-size: 14px; 
+  background-color: white; 
+  color: #212529; 
+  border: 1px solid #ced4da; 
+  border-radius: 4px; 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  padding: 10px; 
+  width: 130px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.subject-button.prev {
+  background-color: #ffadad; 
+}
+
+.subject-button.next {
+  background-color: #d4edda; 
+}
+
+.subject-button:hover {
+  background-color: #b7e1e6; 
+  transform: translateY(-2px);
+}
+
+.subject-button[disabled] {
+  background-color: #ffffff; 
+  color: #ffffff; 
+  cursor: not-allowed; 
+}
