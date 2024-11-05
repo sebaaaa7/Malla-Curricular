@@ -1,0 +1,12 @@
+#root {
+  max-width: 1600px; 
+  margin: 0 auto; 
+  padding: 20px; 
+}
+.custom-image {
+  width: 40px; 
+  height: auto; 
+  margin: 0; 
+  padding-right: 10px; 
+
+}
