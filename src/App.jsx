@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Button } from '@mantine/core';
 import './App.css';
 
+
 const App = () => {
   const [subjectsData, setSubjectsData] = useState([]);
   const [hoveredSubject, setHoveredSubject] = useState(null);
 
   useEffect(() => {
-    fetch('./subjects.json')
+    fetch("/data/subjects.json")
       .then(response => response.json())
       .then(data => setSubjectsData(data.subjects))
       .catch(error => console.error('Error al cargar el JSON:', error));
